@@ -4,7 +4,7 @@ import HeaderButton from "./HeaderButton";
 import mealsImage from '../../images/meals1.jpg';
 
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>

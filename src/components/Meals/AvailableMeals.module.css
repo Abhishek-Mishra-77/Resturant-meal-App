@@ -9,6 +9,7 @@
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
 } 
 
+
 ul li {
     list-style: none;
 }
@@ -30,6 +31,30 @@ ul li {
     width:48.5rem;
 }
 
+@media screen and (max-width: 820px) {
+    .line {
+      width: 35rem;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .line {
+      width: 25rem;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .line {
+      width: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .line {
+      width: 15rem;
+    }
+  }
+
 .main{
     display: flex;
 }
@@ -39,6 +64,20 @@ ul li {
     width: 600px;
 }
 
-.mealForm {
-    
-}
+@media screen and (max-width: 829px) {
+    .content {
+      width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .content {
+      width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 610px) {
+    .content {
+      width: 200px;
+    }
+  }

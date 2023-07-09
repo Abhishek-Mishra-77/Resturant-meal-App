@@ -5,7 +5,13 @@ const MealsForm = (props) => {
     return (
         <form className={classes.form}>
             <label>Amount</label>
-            <input type="number" value={1} />
+            <input
+                type="number"
+                min='1'
+                max='5'
+                step='1'
+                defaultValue='1'
+            />
             <button>+Add</button>
         </form>
     )
