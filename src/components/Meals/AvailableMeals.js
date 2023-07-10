@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import classes from './AvailableMeals.module.css';
 import MealsForm from "./MealItemForm";
 
-const Meals = () => {
+const Meals = (props) => {
 
 
     const Initial_Meals = [
@@ -42,7 +42,10 @@ const Meals = () => {
                                     <span className={classes.price}>$ {meal.price}</span>
                                     <hr className={classes.line}></hr>
                                 </div>
-                                <div className={classes.mealForm}><MealsForm/></div>
+
+                                <div
+                                    className={classes.mealForm}>
+                                    <MealsForm /></div>
                             </div>
 
                         </li>
