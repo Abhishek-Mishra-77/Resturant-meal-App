@@ -1,10 +1,69 @@
-.cart {
+.cartItem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: scroll;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: orange;
+  margin: 1rem;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #892b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 4rem;
+}
+
+.actions button:hover {
+  background-color: #501a01;
+  border-color: #501a01;
+  color: white;
+}
+
+.actions button {
+  background-color: #892b06;
+  color: whiter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cart {
   text-align: center;
   max-width: 30rem;
-  height: 7rem;
+  max-height: max-content;
   width: 80%;
   margin: auto;
-  margin-top: -10rem;
   position: relative;
   background-color: white;
   color: black;
@@ -21,27 +80,23 @@
 .name {
   font-size: 14px;
   margin-top: -2px;
-  max-width: 60px;
 }
 
 .amount {
-  margin-top: 18px;
   font-weight: bold;
   font-size: 18px;
-  max-width: fit-content;
   margin-left: -5px;
 }
 
 .price1 {
     float: right;
-    margin-top: 32px;
+    margin-top: -30px;
     font-weight: bold;
     font-size: 20px;
 }
 
 .price button {
     float: right;
-    margin-top: 5.5rem;
     margin-right: -2.5rem;
     padding: 5px 12px;
     border-radius: 14px;
@@ -69,4 +124,4 @@
     background-color: #8a2b06;
     color: white;
     border: none;
- }
+ } */

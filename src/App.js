@@ -1,9 +1,9 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import Header from "./components/Layouts/Header";
 import Meals from "./components/Meals/AvailableMeals";
 import Summary from "./components/Meals/Summary";
 import Cart from "./components/Cart/Cart";
-import CartProvider from "./components/storeContext/CartProvider";
+import ItemProvider from "./components/storeContext/ItemProvider";
 
 
 
@@ -24,14 +24,14 @@ function App() {
 
 
   return (
-    <CartProvider>
+    <ItemProvider>
       <Header openCartHandler={openCartHandler} />
       <main>
         {showCart && <Cart closeCartHandler={closeCartHandler} />}
         <Summary />
         <Meals />
       </main>
-    </CartProvider>
+    </ItemProvider>
   );
 }
 

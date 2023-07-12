@@ -1,0 +1,150 @@
+.cartItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid red;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.cartItem h2 {
+  margin: -4px  0.5rem 0;
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+
+.summary {
+  width: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  display: inline-table;
+}
+
+.summary p {
+  font-size: 20px;
+}
+
+.price {
+  font-weight: bold;
+  font-weight: bold;
+  color: #892506;
+  font-size: 22px;
+}
+
+.amount {
+    font-weight: bold;
+    border: 1px solid white;
+    margin-left: 110px;
+    color: #363636;
+    width: 10px;
+    border: 1px solid grey;
+    height: 40px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItem button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #892b06;
+  border: 1px solid #892506;
+  width: 3rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cartItem {
+    text-align: center;
+    max-width: 30rem;
+    height: 7rem;
+    max-height: fit-content;
+    width: 80%;
+    margin: auto;
+    margin-top: -10rem;
+    position: relative;
+    background-color: white;
+    color: black;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .cartContent {
+    display: inline-grid;
+    float: left;
+  }
+  
+  .name {
+    font-size: 14px;
+    margin-top: -2px;
+    max-width: 60px;
+  }
+  
+  .amount {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    max-width: fit-content;
+    margin-left: -5px;
+  }
+  
+  .price1 {
+      float: right;
+      margin-top: 32px;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  .price button {
+      float: right;
+      margin-top: 5.5rem;
+      margin-right: -2.5rem;
+      padding: 5px 12px;
+      border-radius: 14px;
+      
+  }
+  
+  .button1 {
+     margin-left: 5rem;
+     background-color: #8a2b06;
+     color: white;
+     border: none;
+     cursor: pointer;
+  }
+  
+  
+  .button2 {
+      background-color: white;
+      color: #8a2b06;
+      border: 1px solid #8a2b06;
+     cursor: pointer;
+      
+   }
+  
+   .button2:hover {
+      background-color: #8a2b06;
+      color: white;
+      border: none;
+   } */

@@ -1,27 +1,54 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from './Cart.module.css';
 import Modal from "../UI/Modal";
+import CartItems from "./CartItems";
+import { ItemProvidercontext } from "../storeContext/ItemProvider";
+
 
 const Cart = (props) => {
+
+    const cartCtx = useContext(ItemProvidercontext)
+
+    const totalAmount = cartCtx.totalAmount;
+
+
+
+    const cartItems = (
+        <ul className={classes.cartItem}>
+            {cartCtx.items.map((item) => (
+                <CartItems
+                    key={item.id}
+                    id={item.id}
+                    count={item.count}
+                    description={item.description}
+                    name={item.name}
+                    price={item.price}
+                    addByOne={cartCtx.addByOne}
+                    removeByOne={cartCtx.removeByOne}
+                />
+            ))}
+        </ul>
+    )
+
+
     return (
         <Modal>
-            <div className={classes.cart}>
-                <div className={classes.cartContent}>
-                    <span className={classes.name}>surabhi</span>
-                    <span className={classes.amount}>Total Amount</span>
-                </div>
-                <div className={classes.price}>
-                    <span className={classes.price1}>50.55</span>
-                    <button className={classes.button1}>Order</button>
-                    <button 
-                    className={classes.button2}
-                    onClick={props.closeCartHandler}>Close</button>
-                </div>
-                <div>
 
-                </div>
+            {cartItems}
+
+            <div className={classes.total}>
+                <span>Total Amount</span>
+                <span>$ {totalAmount}</span>
             </div>
-        </Modal>
+
+            <div className={classes.actions}>
+                <button className={classes.buttonItem} onClick={props.closeCartHandler}>
+                    Close
+                </button>
+                <button onClick={props.openCartHandler}>Order</button>
+            </div>
+
+        </Modal >
 
     )
 }

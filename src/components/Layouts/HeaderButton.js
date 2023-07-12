@@ -1,19 +1,11 @@
 import React, { createContext, useContext, useState } from "react";
 import cardImage from '../../images/cart3.jpg';
 import classes from './HeaderButton.module.css';
-import Context from "../storeContext/Context";
+import { ItemProvidercontext } from "../storeContext/ItemProvider";
 
 const HeaderButton = (props) => {
 
-    const cartCtx = useContext(Context);
-
-
-    const numberOfCartItems = cartCtx.items.reduce((currNumber, item) => {
-        console.log(item)
-        return currNumber + item.amount;
-    }, 5)
-
-
+    const cartCtx = useContext(ItemProvidercontext);
 
 
     return (
@@ -23,7 +15,7 @@ const HeaderButton = (props) => {
             </span>
 
             <span>Your Cart</span>
-            <span className={classes.badge}>{numberOfCartItems}</span>
+            <span className={classes.badge}>{cartCtx.count}</span>
         </button>
     )
 }
