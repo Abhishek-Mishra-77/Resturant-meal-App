@@ -19,7 +19,6 @@ const ItemProvider = (props) => {
         })
         setCount(c);
         setTotalAmount(amount.toFixed(2))
-
     }, [items])
 
 
@@ -44,17 +43,14 @@ const ItemProvider = (props) => {
             const restItem = items.filter((item) => item.id !== id);
             const currentItem = items.filter((item) => item.id === id)[0];
             if(currentItem){
-                if(currentItem.count >1){
+                if(currentItem.count > 1){
                     currentItem.count--;
                 }else{
                     return restItem;
                 }
             }
-
-
             return [...restItem, currentItem]
         })
-
     }
 
 
@@ -71,7 +67,6 @@ const ItemProvider = (props) => {
             else {
                 currentItem = mitem;
             }
-
             return [...restItem, currentItem];
         }
         )
