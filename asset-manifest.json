@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Resturant-meal-App/static/css/main.ec866434.css",
+    "main.js": "/Resturant-meal-App/static/js/main.9292c8d9.js",
+    "static/js/787.0ed0bd6f.chunk.js": "/Resturant-meal-App/static/js/787.0ed0bd6f.chunk.js",
+    "static/media/meals1.jpg": "/Resturant-meal-App/static/media/meals1.2971f633fc1382581cbf.jpg",
+    "index.html": "/Resturant-meal-App/index.html",
+    "main.ec866434.css.map": "/Resturant-meal-App/static/css/main.ec866434.css.map",
+    "main.9292c8d9.js.map": "/Resturant-meal-App/static/js/main.9292c8d9.js.map",
+    "787.0ed0bd6f.chunk.js.map": "/Resturant-meal-App/static/js/787.0ed0bd6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec866434.css",
+    "static/js/main.9292c8d9.js"
+  ]
+}
